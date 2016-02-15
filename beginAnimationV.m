@@ -13,17 +13,17 @@
 -(id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     //self.backgroundColor = [UIColor whiteColor];
-    self.backgroundColor=[UIColor clearColor];
+//    self.backgroundColor=[UIColor clearColor];
+    self.backgroundColor = [UIColor whiteColor];
+    self.alpha = 1;
     [self loadEmitterLayer];
+    [self.layer setNeedsDisplay];
+
     return self;
 }
--(void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-//    CGContextRef ctx =UIGraphicsGetCurrentContext();
-//    CGContextFillRect(ctx, rect);
-//    CGContextSetFillColorWithColor(ctx, [UIColor whiteColor].CGColor);
-//    CGContextFillRect(ctx, rect);
-}
+//-(void)drawRect:(CGRect)rect{
+//    [super drawRect:rect];
+//}
 -(void)loadEmitterLayer{
 //     CAEmitterLayer *propellerEmitter = [CAEmitterLayer layer];
 //    propellerEmitter.emitterPosition = CGPointMake(frameW, frameH);
@@ -50,22 +50,25 @@
     
     
     CAEmitterLayer *propellerEmitter2 = [CAEmitterLayer layer];
-    propellerEmitter2.emitterPosition = CGPointMake(0, 0);
-    propellerEmitter2.emitterMode    = kCAEmitterLayerOutline;
+    propellerEmitter2.emitterPosition = CGPointMake(-40, -40);
+    propellerEmitter2.emitterMode    = kCAEmitterLayerSurface;
     propellerEmitter2.emitterShape	= kCAEmitterLayerCircle;
-//    propellerEmitter2.emitterSize  = CGSizeMake(frameW, frameH);
+    propellerEmitter2.emitterSize  = CGSizeMake(80, 80);
     CAEmitterCell *propellerFlake2 = [CAEmitterCell emitterCell];
-    propellerFlake2.birthRate		=  0.4;
+    propellerFlake2.birthRate		=  0.5;
     propellerFlake2.lifetime		=  50.0;
-    propellerFlake2.emissionLongitude =  30;
+    propellerFlake2.emissionLongitude =  M_PI / 3;
+    propellerFlake2.emissionRange = M_PI / 4;
     propellerFlake2.spin   =   5;
     propellerFlake2.spinRange    = 5;
-    propellerFlake2.velocity	= -10;				// falling down slowly
+    propellerFlake2.velocity	= 70;				// falling down slowly
     propellerFlake2.velocityRange = 10;
+//    propellerFlake2.alphaRange    =  0.5;
+    propellerFlake2.alphaSpeed = - 0.055;
     propellerFlake2.contents		= (id) [[UIImage imageNamed:@"rect2.png"] CGImage];
-    propellerEmitter2.opacity = 0.6;
-    propellerFlake2.scale    =  0.4;
-    propellerFlake2.scaleRange  = 0.3;
+    propellerEmitter2.opacity =     1.0;
+    propellerFlake2.scale    =      0.4;
+    propellerFlake2.scaleRange  =   0.3;
     propellerEmitter2.emitterCells = [NSArray arrayWithObject:propellerFlake2];
     [self.layer addSublayer:propellerEmitter2];
 

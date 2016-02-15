@@ -18,10 +18,11 @@
 		10DE33081C59CD8F007AC1D0 /* LinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE33071C59CD8F007AC1D0 /* LinkViewController.m */; };
 		10DE330B1C59CE4E007AC1D0 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE330A1C59CE4E007AC1D0 /* VideoViewController.m */; };
 		10DE330E1C59CE7A007AC1D0 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE330D1C59CE7A007AC1D0 /* CommunityViewController.m */; };
+		3B0516B21C5B65CA00AB369B /* OperateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0516B11C5B65CA00AB369B /* OperateVC.m */; };
 		3B1A1BC21C59E36D008E13AB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A1BC11C59E36D008E13AB /* opencv2.framework */; };
 		3B1A1BD31C5B0F8D008E13AB /* beginAnimationV.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A1BD21C5B0F8D008E13AB /* beginAnimationV.m */; };
 		3B1A1BE51C5B2F13008E13AB /* 512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A1BD61C5B2F13008E13AB /* 512.png */; };
-		3B1A1BE61C5B2F13008E13AB /* photo_drone-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A1BD71C5B2F13008E13AB /* photo_drone-512.png */; };
+		3B1A1BE61C5B2F13008E13AB /* photo_drone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A1BD71C5B2F13008E13AB /* photo_drone.png */; };
 		3B1A1BE71C5B2F13008E13AB /* air_turbine-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A1BD81C5B2F13008E13AB /* air_turbine-512.png */; };
 		3B1A1BE81C5B2F13008E13AB /* icon-quadcopter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A1BD91C5B2F13008E13AB /* icon-quadcopter.png */; };
 		3B1A1BE91C5B2F13008E13AB /* unload_drone-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A1BDA1C5B2F13008E13AB /* unload_drone-512.png */; };
@@ -37,6 +38,10 @@
 		3B1A1BF31C5B2F13008E13AB /* 38946819-Quadcopter-drone-simple-icon-on-white-background--Stock-Vector.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A1BE41C5B2F13008E13AB /* 38946819-Quadcopter-drone-simple-icon-on-white-background--Stock-Vector.jpg */; };
 		3B1A1BF61C5B2F8A008E13AB /* ZYTshapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A1BF51C5B2F8A008E13AB /* ZYTshapeLayer.m */; };
 		3B1A1BF81C5B41B4008E13AB /* rect2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A1BF71C5B41B4008E13AB /* rect2.png */; };
+		3B4571441C5B92F200586FE8 /* mediaWebV.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4571431C5B92F200586FE8 /* mediaWebV.m */; };
+		3B710DB11C6B1FC7005F4ABC /* tabbar_connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B710DB01C6B1FC7005F4ABC /* tabbar_connect.png */; };
+		3B710DBB1C6C600C005F4ABC /* batteryhalf.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B710DBA1C6C600C005F4ABC /* batteryhalf.png */; };
+		3B710DBD1C6C6158005F4ABC /* roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B710DBC1C6C6158005F4ABC /* roll.png */; };
 		E838F6F60AE48D2CB78975F8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04AC12B1D0B8F277EDEBB28 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,12 +86,14 @@
 		10DE330A1C59CE4E007AC1D0 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoViewController.m; path = HymnLens/VideoViewController.m; sourceTree = "<group>"; };
 		10DE330C1C59CE7A007AC1D0 /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommunityViewController.h; path = HymnLens/CommunityViewController.h; sourceTree = "<group>"; };
 		10DE330D1C59CE7A007AC1D0 /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommunityViewController.m; path = HymnLens/CommunityViewController.m; sourceTree = "<group>"; };
+		3B0516B01C5B65CA00AB369B /* OperateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperateVC.h; sourceTree = "<group>"; };
+		3B0516B11C5B65CA00AB369B /* OperateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperateVC.m; sourceTree = "<group>"; };
 		3B1A1BC11C59E36D008E13AB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		3B1A1BD11C5B0F8D008E13AB /* beginAnimationV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = beginAnimationV.h; sourceTree = "<group>"; };
 		3B1A1BD21C5B0F8D008E13AB /* beginAnimationV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = beginAnimationV.m; sourceTree = "<group>"; };
 		3B1A1BD41C5B1060008E13AB /* Global_Macros.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global_Macros.pch; sourceTree = "<group>"; };
 		3B1A1BD61C5B2F13008E13AB /* 512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512.png; sourceTree = "<group>"; };
-		3B1A1BD71C5B2F13008E13AB /* photo_drone-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_drone-512.png"; sourceTree = "<group>"; };
+		3B1A1BD71C5B2F13008E13AB /* photo_drone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_drone.png; sourceTree = "<group>"; };
 		3B1A1BD81C5B2F13008E13AB /* air_turbine-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "air_turbine-512.png"; sourceTree = "<group>"; };
 		3B1A1BD91C5B2F13008E13AB /* icon-quadcopter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-quadcopter.png"; sourceTree = "<group>"; };
 		3B1A1BDA1C5B2F13008E13AB /* unload_drone-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unload_drone-512.png"; sourceTree = "<group>"; };
@@ -103,6 +110,11 @@
 		3B1A1BF41C5B2F8A008E13AB /* ZYTshapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTshapeLayer.h; sourceTree = "<group>"; };
 		3B1A1BF51C5B2F8A008E13AB /* ZYTshapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTshapeLayer.m; sourceTree = "<group>"; };
 		3B1A1BF71C5B41B4008E13AB /* rect2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rect2.png; sourceTree = "<group>"; };
+		3B4571421C5B92F200586FE8 /* mediaWebV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mediaWebV.h; sourceTree = "<group>"; };
+		3B4571431C5B92F200586FE8 /* mediaWebV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mediaWebV.m; sourceTree = "<group>"; };
+		3B710DB01C6B1FC7005F4ABC /* tabbar_connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_connect.png; sourceTree = "<group>"; };
+		3B710DBA1C6C600C005F4ABC /* batteryhalf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batteryhalf.png; sourceTree = "<group>"; };
+		3B710DBC1C6C6158005F4ABC /* roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roll.png; sourceTree = "<group>"; };
 		A04AC12B1D0B8F277EDEBB28 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A30C866B6EE437DF4C9087 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,6 +224,8 @@
 				10DE330A1C59CE4E007AC1D0 /* VideoViewController.m */,
 				10DE330C1C59CE7A007AC1D0 /* CommunityViewController.h */,
 				10DE330D1C59CE7A007AC1D0 /* CommunityViewController.m */,
+				3B0516B01C5B65CA00AB369B /* OperateVC.h */,
+				3B0516B11C5B65CA00AB369B /* OperateVC.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -223,6 +237,8 @@
 				3B1A1BD21C5B0F8D008E13AB /* beginAnimationV.m */,
 				3B1A1BF41C5B2F8A008E13AB /* ZYTshapeLayer.h */,
 				3B1A1BF51C5B2F8A008E13AB /* ZYTshapeLayer.m */,
+				3B4571421C5B92F200586FE8 /* mediaWebV.h */,
+				3B4571431C5B92F200586FE8 /* mediaWebV.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -230,8 +246,11 @@
 		3B1A1BD51C5B2F00008E13AB /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				3B710DBC1C6C6158005F4ABC /* roll.png */,
+				3B710DBA1C6C600C005F4ABC /* batteryhalf.png */,
+				3B710DB01C6B1FC7005F4ABC /* tabbar_connect.png */,
 				3B1A1BD61C5B2F13008E13AB /* 512.png */,
-				3B1A1BD71C5B2F13008E13AB /* photo_drone-512.png */,
+				3B1A1BD71C5B2F13008E13AB /* photo_drone.png */,
 				3B1A1BD81C5B2F13008E13AB /* air_turbine-512.png */,
 				3B1A1BD91C5B2F13008E13AB /* icon-quadcopter.png */,
 				3B1A1BDA1C5B2F13008E13AB /* unload_drone-512.png */,
@@ -377,18 +396,21 @@
 				10DE32DE1C59C390007AC1D0 /* LaunchScreen.storyboard in Resources */,
 				3B1A1BF31C5B2F13008E13AB /* 38946819-Quadcopter-drone-simple-icon-on-white-background--Stock-Vector.jpg in Resources */,
 				3B1A1BF01C5B2F13008E13AB /* 30708-200.png in Resources */,
+				3B710DBD1C6C6158005F4ABC /* roll.png in Resources */,
 				3B1A1BE71C5B2F13008E13AB /* air_turbine-512.png in Resources */,
 				3B1A1BED1C5B2F13008E13AB /* triangle1.png in Resources */,
 				3B1A1BF21C5B2F13008E13AB /* 30708-84.png in Resources */,
 				3B1A1BF11C5B2F13008E13AB /* 38911396-Quadcopter-side-view-simple-icon-on-white-background--Stock-Vector.jpg in Resources */,
 				3B1A1BEA1C5B2F13008E13AB /* rect1.png in Resources */,
-				3B1A1BE61C5B2F13008E13AB /* photo_drone-512.png in Resources */,
+				3B1A1BE61C5B2F13008E13AB /* photo_drone.png in Resources */,
 				3B1A1BF81C5B41B4008E13AB /* rect2.png in Resources */,
 				3B1A1BE81C5B2F13008E13AB /* icon-quadcopter.png in Resources */,
 				10DE32DB1C59C390007AC1D0 /* Assets.xcassets in Resources */,
+				3B710DBB1C6C600C005F4ABC /* batteryhalf.png in Resources */,
 				3B1A1BE51C5B2F13008E13AB /* 512.png in Resources */,
 				3B1A1BE91C5B2F13008E13AB /* unload_drone-512.png in Resources */,
 				3B1A1BEF1C5B2F13008E13AB /* radio_spy_drone-512.png in Resources */,
+				3B710DB11C6B1FC7005F4ABC /* tabbar_connect.png in Resources */,
 				3B1A1BEC1C5B2F13008E13AB /* 512 (1).png in Resources */,
 				3B1A1BEB1C5B2F13008E13AB /* 13111-200 (1).png in Resources */,
 				10DE32D91C59C390007AC1D0 /* Main.storyboard in Resources */,
@@ -470,7 +492,9 @@
 				10DE32D31C59C390007AC1D0 /* AppDelegate.m in Sources */,
 				10DE32D01C59C390007AC1D0 /* main.m in Sources */,
 				10DE33031C59C561007AC1D0 /* HLTabBarController.m in Sources */,
+				3B0516B21C5B65CA00AB369B /* OperateVC.m in Sources */,
 				3B1A1BD31C5B0F8D008E13AB /* beginAnimationV.m in Sources */,
+				3B4571441C5B92F200586FE8 /* mediaWebV.m in Sources */,
 				3B1A1BF61C5B2F8A008E13AB /* ZYTshapeLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,8 +641,9 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HymnLens/Global_Macros.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = HymnLens/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenzhihao.HymnLens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -637,8 +662,9 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HymnLens/Global_Macros.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = HymnLens/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenzhihao.HymnLens;
 				PRODUCT_NAME = "$(TARGET_NAME)";

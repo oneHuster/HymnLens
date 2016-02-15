@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    [UIView animateWithDuration:3.f animations:^{
+//        self.view.alpha = 0;
+//    } completion:^(BOOL finished) {
+//        NSLog(@"finish");
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -25,15 +25,19 @@
 }
 
 - (void)loadSubViewController{
+    self.tabBar.tintColor = [UIColor blackColor];
+    
     self.linkViewController = [[LinkViewController alloc]init];
-    self.linkViewController.tabBarItem.title = @"连接";
+    UINavigationController * linkNav = [[UINavigationController alloc]initWithRootViewController:self.linkViewController];
+    linkNav.tabBarItem.title = @"连接";
+    linkNav.tabBarItem.image = [UIImage imageNamed:@"tabbar_connect.png"];
     self.videoViewController = [[VideoViewController alloc]init];
     UINavigationController * videoNav = [[UINavigationController alloc]initWithRootViewController:self.videoViewController];
     videoNav.tabBarItem.title = @"视频库";
     self.communityViewController = [[CommunityViewController alloc]init];
-    UINavigationController * communityNav = [[UINavigationController alloc]initWithRootViewController:self.videoViewController];
+    UINavigationController * communityNav = [[UINavigationController alloc]initWithRootViewController:self.communityViewController];
     communityNav.tabBarItem.title = @"社区";
-    self.viewControllers = @[self.linkViewController, videoNav, communityNav];
+    self.viewControllers = @[linkNav, videoNav, communityNav];
 }
 /*
 #pragma mark - Navigation

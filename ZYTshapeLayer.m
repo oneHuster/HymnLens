@@ -18,7 +18,7 @@
     CGPathAddLineToPoint(pathRef, NULL, X2,Y2);
     self.path=pathRef;
     self.strokeStart = 0;
-    self.strokeEnd=0.1;
+    self.strokeEnd=0;
     //[layer addSublayer:self.line1];
 }
 @end
