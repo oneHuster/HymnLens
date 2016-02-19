@@ -42,7 +42,13 @@
 		3B710DB11C6B1FC7005F4ABC /* tabbar_connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B710DB01C6B1FC7005F4ABC /* tabbar_connect.png */; };
 		3B710DBB1C6C600C005F4ABC /* batteryhalf.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B710DBA1C6C600C005F4ABC /* batteryhalf.png */; };
 		3B710DBD1C6C6158005F4ABC /* roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B710DBC1C6C6158005F4ABC /* roll.png */; };
-		E838F6F60AE48D2CB78975F8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04AC12B1D0B8F277EDEBB28 /* Pods.framework */; };
+		3B710DFB1C71801C005F4ABC /* launch_BG1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B710DFA1C71801C005F4ABC /* launch_BG1.jpg */; };
+		3B710DFF1C72CBBF005F4ABC /* communityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B710DFE1C72CBBF005F4ABC /* communityCell.m */; };
+		3B710E031C72D285005F4ABC /* CAShapeLayer+init.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B710E021C72D285005F4ABC /* CAShapeLayer+init.m */; };
+		3B710E051C72E9EC005F4ABC /* gentleman.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B710E041C72E9EC005F4ABC /* gentleman.png */; };
+		3B710E081C72FEBE005F4ABC /* communityDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B710E071C72FEBE005F4ABC /* communityDetailVC.m */; };
+		3B710E0A1C747827005F4ABC /* launch_BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B710E091C747827005F4ABC /* launch_BG.jpg */; };
+		E838F6F60AE48D2CB78975F8 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04AC12B1D0B8F277EDEBB28 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +121,15 @@
 		3B710DB01C6B1FC7005F4ABC /* tabbar_connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_connect.png; sourceTree = "<group>"; };
 		3B710DBA1C6C600C005F4ABC /* batteryhalf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batteryhalf.png; sourceTree = "<group>"; };
 		3B710DBC1C6C6158005F4ABC /* roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roll.png; sourceTree = "<group>"; };
+		3B710DFA1C71801C005F4ABC /* launch_BG1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_BG1.jpg; sourceTree = "<group>"; };
+		3B710DFD1C72CBBF005F4ABC /* communityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = communityCell.h; sourceTree = "<group>"; };
+		3B710DFE1C72CBBF005F4ABC /* communityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = communityCell.m; sourceTree = "<group>"; };
+		3B710E011C72D285005F4ABC /* CAShapeLayer+init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+init.h"; sourceTree = "<group>"; };
+		3B710E021C72D285005F4ABC /* CAShapeLayer+init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+init.m"; sourceTree = "<group>"; };
+		3B710E041C72E9EC005F4ABC /* gentleman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gentleman.png; sourceTree = "<group>"; };
+		3B710E061C72FEBE005F4ABC /* communityDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = communityDetailVC.h; sourceTree = "<group>"; };
+		3B710E071C72FEBE005F4ABC /* communityDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = communityDetailVC.m; sourceTree = "<group>"; };
+		3B710E091C747827005F4ABC /* launch_BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_BG.jpg; sourceTree = "<group>"; };
 		A04AC12B1D0B8F277EDEBB28 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A30C866B6EE437DF4C9087 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +164,8 @@
 		10DE32C21C59C38F007AC1D0 = {
 			isa = PBXGroup;
 			children = (
+				3B710E001C72D26A005F4ABC /* category */,
+				3B710DFC1C72CB70005F4ABC /* tableViewCell */,
 				3B1A1BD51C5B2F00008E13AB /* resource */,
 				3B1A1BD01C5B0C24008E13AB /* views */,
 				3B1A1BC11C59E36D008E13AB /* opencv2.framework */,
@@ -226,6 +243,8 @@
 				10DE330D1C59CE7A007AC1D0 /* CommunityViewController.m */,
 				3B0516B01C5B65CA00AB369B /* OperateVC.h */,
 				3B0516B11C5B65CA00AB369B /* OperateVC.m */,
+				3B710E061C72FEBE005F4ABC /* communityDetailVC.h */,
+				3B710E071C72FEBE005F4ABC /* communityDetailVC.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -246,6 +265,9 @@
 		3B1A1BD51C5B2F00008E13AB /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				3B710E091C747827005F4ABC /* launch_BG.jpg */,
+				3B710E041C72E9EC005F4ABC /* gentleman.png */,
+				3B710DFA1C71801C005F4ABC /* launch_BG1.jpg */,
 				3B710DBC1C6C6158005F4ABC /* roll.png */,
 				3B710DBA1C6C600C005F4ABC /* batteryhalf.png */,
 				3B710DB01C6B1FC7005F4ABC /* tabbar_connect.png */,
@@ -267,6 +289,24 @@
 				3B1A1BE41C5B2F13008E13AB /* 38946819-Quadcopter-drone-simple-icon-on-white-background--Stock-Vector.jpg */,
 			);
 			name = resource;
+			sourceTree = "<group>";
+		};
+		3B710DFC1C72CB70005F4ABC /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3B710DFD1C72CBBF005F4ABC /* communityCell.h */,
+				3B710DFE1C72CBBF005F4ABC /* communityCell.m */,
+			);
+			name = tableViewCell;
+			sourceTree = "<group>";
+		};
+		3B710E001C72D26A005F4ABC /* category */ = {
+			isa = PBXGroup;
+			children = (
+				3B710E011C72D285005F4ABC /* CAShapeLayer+init.h */,
+				3B710E021C72D285005F4ABC /* CAShapeLayer+init.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 		642190E11E99CD7CDC4ECA64 /* Frameworks */ = {
@@ -394,6 +434,7 @@
 			files = (
 				3B1A1BEE1C5B2F13008E13AB /* f1c7583b162713b78f40f1a0bb5a5aef7bb724e2_original.png in Resources */,
 				10DE32DE1C59C390007AC1D0 /* LaunchScreen.storyboard in Resources */,
+				3B710DFB1C71801C005F4ABC /* launch_BG1.jpg in Resources */,
 				3B1A1BF31C5B2F13008E13AB /* 38946819-Quadcopter-drone-simple-icon-on-white-background--Stock-Vector.jpg in Resources */,
 				3B1A1BF01C5B2F13008E13AB /* 30708-200.png in Resources */,
 				3B710DBD1C6C6158005F4ABC /* roll.png in Resources */,
@@ -402,8 +443,10 @@
 				3B1A1BF21C5B2F13008E13AB /* 30708-84.png in Resources */,
 				3B1A1BF11C5B2F13008E13AB /* 38911396-Quadcopter-side-view-simple-icon-on-white-background--Stock-Vector.jpg in Resources */,
 				3B1A1BEA1C5B2F13008E13AB /* rect1.png in Resources */,
+				3B710E051C72E9EC005F4ABC /* gentleman.png in Resources */,
 				3B1A1BE61C5B2F13008E13AB /* photo_drone.png in Resources */,
 				3B1A1BF81C5B41B4008E13AB /* rect2.png in Resources */,
+				3B710E0A1C747827005F4ABC /* launch_BG.jpg in Resources */,
 				3B1A1BE81C5B2F13008E13AB /* icon-quadcopter.png in Resources */,
 				10DE32DB1C59C390007AC1D0 /* Assets.xcassets in Resources */,
 				3B710DBB1C6C600C005F4ABC /* batteryhalf.png in Resources */,
@@ -487,11 +530,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DE330E1C59CE7A007AC1D0 /* CommunityViewController.m in Sources */,
+				3B710E081C72FEBE005F4ABC /* communityDetailVC.m in Sources */,
 				10DE330B1C59CE4E007AC1D0 /* VideoViewController.m in Sources */,
 				10DE33081C59CD8F007AC1D0 /* LinkViewController.m in Sources */,
+				3B710E031C72D285005F4ABC /* CAShapeLayer+init.m in Sources */,
 				10DE32D31C59C390007AC1D0 /* AppDelegate.m in Sources */,
 				10DE32D01C59C390007AC1D0 /* main.m in Sources */,
 				10DE33031C59C561007AC1D0 /* HLTabBarController.m in Sources */,
+				3B710DFF1C72CBBF005F4ABC /* communityCell.m in Sources */,
 				3B0516B21C5B65CA00AB369B /* OperateVC.m in Sources */,
 				3B1A1BD31C5B0F8D008E13AB /* beginAnimationV.m in Sources */,
 				3B4571441C5B92F200586FE8 /* mediaWebV.m in Sources */,
@@ -635,6 +681,7 @@
 			baseConfigurationReference = B3A30C866B6EE437DF4C9087 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Qianjia Wang (H2V7YXQWN8)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -643,7 +690,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HymnLens/Global_Macros.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = HymnLens/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenzhihao.HymnLens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -656,6 +703,7 @@
 			baseConfigurationReference = 0E8E66D8EB63BAB8E7746F84 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Qianjia Wang (H2V7YXQWN8)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -664,7 +712,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HymnLens/Global_Macros.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = HymnLens/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chenzhihao.HymnLens;
 				PRODUCT_NAME = "$(TARGET_NAME)";

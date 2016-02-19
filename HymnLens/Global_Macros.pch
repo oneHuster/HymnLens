@@ -19,4 +19,7 @@
 #pragma mark ---------------------------------UIView color
 #define V_COLOR [UIColor colorWithWhite:0.94 alpha:1]
 
+
+#define VC_HEIGHT     self.view.bounds.size.height
+#define VC_WIDTH         self.view.bounds.size.width
 #endif /* Global_Macros_pch */

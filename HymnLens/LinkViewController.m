@@ -44,10 +44,14 @@
 }
 
 -(void)removeTheAnimationView{
-    [UIView animateWithDuration:1 delay:3.0 options:UIViewAnimationOptionTransitionCurlDown animations:^{
+    self.navigationController.navigationBar.hidden = YES;
+    self.tabBarController.tabBar.hidden = YES;
+    [UIView animateWithDuration:3 delay:3.0 options:UIViewAnimationOptionTransitionCurlDown animations:^{
         self.benginV.alpha = 0;
     } completion:^(BOOL finished) {
         NSLog(@"finish");
+        self.navigationController.navigationBar.hidden = NO;
+        self.tabBarController.tabBar.hidden = NO;
         [self.benginV removeFromSuperview];
         [self.timer1 invalidate];
     }];

@@ -14,7 +14,9 @@
     self = [super initWithFrame:frame];
     //self.backgroundColor = [UIColor whiteColor];
 //    self.backgroundColor=[UIColor clearColor];
-    self.backgroundColor = [UIColor whiteColor];
+    self.contentMode = UIViewContentModeScaleAspectFill;
+    self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"launch_BG.jpg"]];
+    //self.backgroundColor = [UIColor whiteColor];
     self.alpha = 1;
     [self loadEmitterLayer];
     [self.layer setNeedsDisplay];
