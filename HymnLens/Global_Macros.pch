@@ -9,16 +9,21 @@
 #ifndef Global_Macros_pch
 #define Global_Macros_pch
 
+
 #import "Masonry.h"
 #import <AVFoundation/AVFoundation.h>
+#import <SpriteKit/SpriteKit.h>
+
+//#import "GPUImage.h"
 //#import <Masonry>
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-
 #pragma mark ---------------------------------UIView color
 #define V_COLOR [UIColor colorWithWhite:0.94 alpha:1]
 
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 #define VC_HEIGHT     self.view.bounds.size.height
 #define VC_WIDTH         self.view.bounds.size.width

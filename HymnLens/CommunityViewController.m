@@ -10,9 +10,12 @@
 #import "communityCell.h"
 #import "CAShapeLayer+init.h"
 #import "communityDetailVC.h"
+#import "UIImageView+BlurAnimation.h"
+
+
 @interface CommunityViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property UITableView *tableView;
-@property UIView *headV;
+@property UIImageView *headV;
 
 @property NSTimer *timer;
 @property CAShapeLayer *shapelayer;
@@ -20,6 +23,11 @@
 @property UILabel *username;
 @property UIButton *favicon;
 @property communityDetailVC *detailVC;
+
+//@property GPUImageGaussianBlurFilter *gaussianFilter;
+//@property UIImage *headImage;
+@property UIImage *blurredImage;
+//@property gpuimage
 @end
 
 static NSString *cellIdentifier = @"cell";
@@ -62,6 +70,7 @@ static NSString *cellIdentifier = @"cell";
     self.favicon.alpha += 0.1;
     self.shapelayer.strokeEnd += 0.1;
     self.nameline.strokeEnd += 0.1;
+    //[self blurProcess:_gaussianFilter.blurRadiusInPixels+=1.5];
     if (self.shapelayer.strokeEnd>1) {
         [self.timer invalidate];
     }
@@ -110,9 +119,23 @@ static NSString *cellIdentifier = @"cell";
     [self.view addSubview:self.tableView];
 }
 -(void)initWithHeadView{
-    self.headV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, VC_WIDTH, 140)];
+    self.headV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, VC_WIDTH, 140)];
+    [self blurProcess];
     
 }
+
+-(void)blurProcess{
+    UIImage *sourceImage = [UIImage imageNamed:@"head_BG.jpg"];
+    self.headV.image = sourceImage;
+    self.headV.userInteractionEnabled = YES;
+    //模糊颜色
+    //self.headV.blurTintColor = [UIColor colorWithWhite:0.4f alpha:0.3f];
+    self.headV.blurRadius = 40;
+    //动画重复次数，0是一直。
+    self.headV.animationRepeatCount = 1;
+    [self.headV ty_blurInAnimationWithDuration:3.f];
+}
+
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     communityCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];

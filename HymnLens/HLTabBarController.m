@@ -30,13 +30,15 @@
     self.linkViewController = [[LinkViewController alloc]init];
     UINavigationController * linkNav = [[UINavigationController alloc]initWithRootViewController:self.linkViewController];
     linkNav.tabBarItem.title = @"连接";
-    linkNav.tabBarItem.image = [UIImage imageNamed:@"tabbar_connect.png"];
+    linkNav.tabBarItem.image = [UIImage imageNamed:@"wifi.png"];
     self.videoViewController = [[VideoViewController alloc]init];
     UINavigationController * videoNav = [[UINavigationController alloc]initWithRootViewController:self.videoViewController];
     videoNav.tabBarItem.title = @"视频库";
+    videoNav.tabBarItem.image = [UIImage imageNamed:@"media.png"];
     self.communityViewController = [[CommunityViewController alloc]init];
     UINavigationController * communityNav = [[UINavigationController alloc]initWithRootViewController:self.communityViewController];
     communityNav.tabBarItem.title = @"社区";
+    communityNav.tabBarItem.image = [UIImage imageNamed:@"shequhuati.png"];
     self.viewControllers = @[linkNav, videoNav, communityNav];
 }
 /*

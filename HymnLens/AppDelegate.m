@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HLTabBarController.h"
-
+#import "BmobSDK/Bmob.h"
 @interface AppDelegate ()
 
 @end
@@ -23,6 +23,8 @@
     [tabBarController loadSubViewController];
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
+    //云端数据库对应
+    [Bmob registerWithAppKey:@"c53360441f824ac400856a47f209f19d"];
     return YES;
 }
 

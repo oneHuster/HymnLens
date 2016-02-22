@@ -12,7 +12,7 @@
 -(void)drawLineFrom:(float)X1 and:(float)Y1 To:(float)X2 and:(float)Y2{
     self.lineWidth = 1.5f;
     self.strokeColor= [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:0.6].CGColor;
-    self.strokeColor = [UIColor blackColor].CGColor;
+    self.strokeColor = [UIColor whiteColor].CGColor;
     CGMutablePathRef pathRef = CGPathCreateMutable();
     CGPathMoveToPoint(pathRef, NULL, X1,Y1);
     CGPathAddLineToPoint(pathRef, NULL, X2,Y2);

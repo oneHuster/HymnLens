@@ -1,13 +1,28 @@
 PODS:
-  - CocoaAsyncSocket (7.4.2)
+  - BmobSDK (1.6.6)
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - GPUImage (0.1.7)
   - Masonry (0.6.4)
+  - TYBlurImage (1.2.0)
 
 DEPENDENCIES:
+  - BmobSDK
   - CocoaAsyncSocket
+  - GPUImage (~> 0.1.7)
   - Masonry
+  - TYBlurImage
 
 SPEC CHECKSUMS:
-  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  BmobSDK: c896d4ff3986f2b4fc8406fb2b801230f7419878
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  TYBlurImage: c77137c2bfc1b3713daa7ab2ce859640ea1c9c09
 
 COCOAPODS: 0.38.2

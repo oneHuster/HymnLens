@@ -21,6 +21,13 @@
     shape.path=circlePath.CGPath;
     shape.strokeStart = 0.125;
     shape.strokeEnd = 0.175;
+    
     return shape;
+}
+-(void)addShadows{
+    self.shadowColor = self.strokeColor;
+    self.shadowOpacity = 1;
+//    self.shadowOffset = CGSizeMake(2, 2);
+    self.shadowRadius = 2;
 }
 @end

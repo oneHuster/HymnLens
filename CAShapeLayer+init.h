@@ -10,4 +10,5 @@
 
 @interface CAShapeLayer (init)
 +(CAShapeLayer*)initializeWithFrame:(CGRect)rect;
+-(void)addShadows;
 @end

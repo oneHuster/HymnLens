@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VideoViewController : UIViewController
+@interface VideoViewController : UIViewController<UIGestureRecognizerDelegate>
 
 @end
